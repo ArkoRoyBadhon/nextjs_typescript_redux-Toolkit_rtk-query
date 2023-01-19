@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import React from 'react';
 import { useProductGetQuery } from '../../Components/Services/products';
 import Navbar from '../../Components/smallComponent/Navbar';
 import Slider from './Slider';

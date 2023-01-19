@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import React from 'react';
 import { useAddUserMutation, useAuthUserQuery } from '../../Components/Services/authenticationSystem';
 import Navbar from '../../Components/smallComponent/Navbar';
 import { useRouter } from 'next/router'
@@ -23,7 +22,7 @@ const index = () => {
         const password = form.password.value;
 
         // const id = (data:any
-        console.log();
+        // console.log();
 
 
         const newUser = {
@@ -33,14 +32,14 @@ const index = () => {
             password,
             role: "user"
         }
-        console.log(newUser);
+        // console.log(newUser);
         const smData = data?.find(user => {
             if(user.email === email) {
                 return true
             } else
                 return false
         })
-        console.log("condition type", smData);
+        // console.log("condition type", smData);
         if (smData) {
             alert("This email already exists. Please try with another email");
             return;

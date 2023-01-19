@@ -4,7 +4,7 @@ import { ProductModal } from '../modals/product.model'
 
 export const productApiK = createApi({
     reducerPath: "productApiK",
-    baseQuery: fetchBaseQuery({ baseUrl: "http://localhost:5000/" }),
+    baseQuery: fetchBaseQuery({ baseUrl: "https://server-arkoroybadhon.vercel.app/" }),
     tagTypes: ['ProductModal'],
     endpoints: (builder) => ({
         productGet: builder.query<ProductModal[], void>({

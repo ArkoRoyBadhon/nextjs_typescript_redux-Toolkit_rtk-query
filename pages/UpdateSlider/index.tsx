@@ -19,7 +19,7 @@ const index = () => {
 
     const handleimgId = async (item: any) => {
         // alert(typeof item)
-        console.log(linkValue);
+        // console.log(linkValue);
         const id: any = item._id
         // const info: any = {
         //     id,
@@ -62,7 +62,7 @@ const index = () => {
         }
         if (AAA) {
             // setLinkValue(link)
-            console.log(AAA);
+            // console.log(AAA);
             updateImage(AAA);
             // alert('done')
         } else {

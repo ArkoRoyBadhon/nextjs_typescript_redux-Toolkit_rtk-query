@@ -5,7 +5,7 @@ import { AuthModal } from '../modals/contact.model';
 
 export const authApi = createApi({
     reducerPath: "authApi",
-    baseQuery: fetchBaseQuery({ baseUrl: "http://localhost:5000/" }),
+    baseQuery: fetchBaseQuery({ baseUrl: "https://server-arkoroybadhon.vercel.app/" }),
     tagTypes: ['AuthModal'],
     endpoints: (builder) => ({
         authUser: builder.query<AuthModal[], void>({

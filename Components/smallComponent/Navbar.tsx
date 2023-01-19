@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { logOutUser } from '../store/productSlice';
 
@@ -8,7 +7,7 @@ const Navbar = () => {
     const loginStatus: any = useSelector(logOutUser);
     const dispatch = useDispatch();
     const loginInfo = loginStatus.payload.showReducer.loginStatus
-    console.log(loginInfo);
+    // console.log(loginInfo);
 
     const handleLogOut = () => {
         dispatch(logOutUser(false))

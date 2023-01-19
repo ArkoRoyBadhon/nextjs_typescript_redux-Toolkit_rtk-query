@@ -17,7 +17,7 @@ const LoginPage = () => {
     const dispatch = useDispatch();
     const loginInfo = loginStatus.payload.showReducer.loginStatus
 
-    console.log('ll',loginInfo);
+    // console.log('ll',loginInfo);
     
 
 

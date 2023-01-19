@@ -5,7 +5,7 @@ import { slideImgModal, slideImgModalDataBase } from '../modals/sliderImg,model'
 
 export const slideApi = createApi({
     reducerPath: "slideApi",
-    baseQuery: fetchBaseQuery({ baseUrl: "http://localhost:5000/" }),
+    baseQuery: fetchBaseQuery({ baseUrl: "https://server-arkoroybadhon.vercel.app/" }),
     tagTypes: ['slideImgModal'],
     endpoints: (builder) => ({
         sliderImgget: builder.query<slideImgModal[], void>({
@@ -13,7 +13,7 @@ export const slideApi = createApi({
             providesTags: ['slideImgModal']
         }),
         updateImage: builder.mutation<void, slideImgModal>({
-            query: ({_id, ...rest}) => ({
+            query: ({ _id, ...rest }) => ({
                 url: `/images/${_id}`,
                 method: "PATCH",
                 body: rest
@@ -23,4 +23,4 @@ export const slideApi = createApi({
 })
 
 
-export const {useSliderImggetQuery, useUpdateImageMutation} = slideApi
+export const { useSliderImggetQuery, useUpdateImageMutation } = slideApi

@@ -43,7 +43,7 @@ const ProductDetail = () => {
             quantity: itemQuantity,
             price: (price * itemQuantity)
         }
-        console.log(paydata);
+        // console.log(paydata);
 
         dispatch(itemAdd({
             title,
