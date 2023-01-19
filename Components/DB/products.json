@@ -1,0 +1,14 @@
+[
+    {
+        "category": "Samsung",
+        "title": "Galaxy s22 Ultra",
+        "image": "ii",
+        "price": 40000
+    },
+    {
+        "category": "Apple",
+        "title": "Iphone 14 pro max",
+        "image": "ii",
+        "price": 140000
+    }
+]
